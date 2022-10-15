@@ -1,5 +1,8 @@
 site_name: Développeur Python/Django
 site_url: https://souleymanediallo.github.io/blog/
+site_author: Souleymane Diallo
+copyright: Copyright &copy; 2022 Souleymane Diallo
+
 theme:
   name: material
   language: fr
@@ -30,24 +33,4 @@ plugins:
   - blog:
       blog_dir: blog/
       post_date_format: yyyy/MM/dd
-
-copyright: Copyright &copy; 2022 Souleymane Diallo
-
-on:
-  push:
-    branches:
-      - master 
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-        with:
-          python-version: 3.x
-      - run: pip install --upgrade pip && pip install mkdocs
-      - run: pip install mkdocs-material 
-      - run: mkdocs gh-deploy --force
-
 
