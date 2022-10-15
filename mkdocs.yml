@@ -1,0 +1,34 @@
+site_name: Développeur Python/Django
+
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.top
+    - navigation.sections
+    - search.share
+    - navigation.tabs
+    - navigation.expand
+    - navigation.indexes
+    - content.code.annotate
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/souleymanediallo
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+plugins:
+  - literate-nav:
+      nav_file: SUMMARY.md
+  - blog:
+      blog_dir: blog/
+      post_date_format: yyyy/MM/dd
+
+copyright: Copyright &copy; 2022 Souleymane Diallo
