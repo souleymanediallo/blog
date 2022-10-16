@@ -27,6 +27,7 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
 
+# Pluging
 plugins:
   - literate-nav:
       nav_file: SUMMARY.md

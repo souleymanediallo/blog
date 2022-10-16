@@ -1,19 +1,29 @@
-name: build
+name: mkdocs
+
 on:
   push:
-    branches:
-      - master
+    branches: master
+  pull_request:
+    branches: master
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: 3.8
+
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
         with:
-          python-version: 3.x
-      - run: pip install mkdocs
-      - run: pip install mkdocs-click
-      - run: pip install -r requirements.txt
-      - run: export PYTHONPATH=$(pwd)
-      - run: bash -c "PYTHONPATH=$PWD mkdocs gh-deploy --force --clean --verbose"
+          python-version: ${{ matrix.python-version }}
+          architecture: x64
+
+      - name: Install requirements
+        run: python3 -m pip install -r requirements.txt
+
+      - name: Deploy 🚀
+        run: python3 -m mkdocs gh-deploy --force
