@@ -4,6 +4,18 @@ site_author: Souleymane Diallo
 copyright: Copyright &copy; 2022 Souleymane Diallo
 
 theme:
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
   name: material
   language: fr
   features:
@@ -26,11 +38,21 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 # Pluging
 plugins:
+  - search:
+      lang: fr
   - literate-nav:
       nav_file: SUMMARY.md
+  - mkdocs-video
   - blog:
       blog_dir: blog/
       post_date_format: yyyy/MM/dd

@@ -8,6 +8,7 @@
     * [Facile](Projets/Facile/)
     * [Moyen](Projets/Moyen/)
     * [Difficile](Projets/Difficile/)
+* [Accessibilité](Accessibilite/)
 * [Blog](blog/index.md)
     * [Articles](blog/posts/)
 
