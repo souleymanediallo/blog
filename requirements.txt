@@ -53,7 +53,7 @@ mkdocs-blogging-plugin==2.1.1
 mkdocs-literate-nav==0.5.0
 mkdocs-material==8.5.6
 mkdocs-material-extensions==1.0.3
-mkdocs-video==1.3.O
+mkdocs-video==1.3.0
 nbclassic==0.2.7
 nbclient==0.5.3
 nbconvert==6.0.7
