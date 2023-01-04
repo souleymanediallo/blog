@@ -1,3 +1,4 @@
+# Les Tuples
 Un tuple est un type de séquence immuable en Python. Cela signifie qu'une fois que vous avez créé un tuple, vous ne pouvez pas modifier son contenu. Les tuples sont créés en mettant une séquence d'éléments séparés par des virgules entre parenthèses (`()`).
 
 Voici un exemple de tuple en Python :
