@@ -1,21 +1,27 @@
-# Apprendre le langage Python
+# Présentation
 
-Que vous débutiez en programmation ou que vous soyez un développeur expérimenté, il est facile d'apprendre et d'utiliser le langage Python.
+Bienvenue sur ACADEMY221, votre plateforme d'apprentissage en ligne !
 
-Nous allons découvrir ensemble les fondamentaux jusqu'à des concepts de programmations plus intermédiares et plus avancés.
+Vous avez toujours voulu apprendre le langage Pyhton mais vous ne savez pas par où commencer ? Vous cherchez un moyen pratique et flexible d'acquérir de nouvelles compétences en informatique ? Notre programme d'apprentissage en ligne est fait pour vous !
 
-La documentation officile [python.org](https://www.python.org/).
+Nous vous offrons l'opportunité d'apprendre le langage Pyhton en ligne, à votre propre rythme et à partir de n'importe où.
 
-## Commands
+## Pourquoi apprendre le langage Python ?
+Python est l'un des langages de programmation les plus populaires et polyvalents au monde, utilisé dans de nombreux domaines tels que la science des données, le développement Web, l'automatisation et bien d'autres.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+ACADEMY221 vise à fournir aux participants une solide compréhension de la programmation en Python, ainsi que les compétences nécessaires pour utiliser ce langage de programmation de manière efficace et professionnelle.
 
-## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Ce que vous apprendrez
+
+* Comprendre les bases de la programmation avec Python
+* Maîtriser la programmation orientée objet et structurer vos programmes Python comme un professionnel.
+* Automatiser vos données à partir de sites Web à l'aide de bibliothèques de grattage Web telles que BeautifulSoup et Selenium.
+* Interagir avec les API REST
+* Comprendre des sujets complexes tels que les décorateurs, les algorithmes et la programmation asynchrone en Python.
+* Créer des applications de bureau
+* Créer des applications web avec Django ou Flask
+* Exercices avec des propositions de solutions
+
+## Conclusion
+Nous espérons que cette présentation vous a donné un aperçu de ce que vous pouvez attendre de notre formation Python et que vous serez intéressé(e) par la suite de cette aventure passionnante dans le monde de la programmation. Nous sommes impatients de vous accueillir dans notre programme et de vous aider à atteindre vos objectifs de développement Python.

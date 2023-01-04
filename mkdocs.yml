@@ -1,14 +1,14 @@
 site_name: Développeur Python/Django
-site_url: https://www.academy221.com
+site_url: https://wwww.academy221.com
 site_author: Souleymane Diallo
-copyright: Copyright &copy; 2022 Souleymane Diallo
+copyright: Copyright &copy; 2023 ACADEMY221
 
 theme:
-  palette: 
+  palette:
     # Palette toggle for light mode
     - scheme: default
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
     # Palette toggle for dark mode
     - scheme: slate
@@ -41,12 +41,11 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_generator: !!python/name:materialx.emoji.to_svg # Pluging
 
-# Pluging
 plugins:
   - search:
       lang: fr
@@ -56,4 +55,3 @@ plugins:
   - blog:
       blog_dir: blog/
       post_date_format: yyyy/MM/dd
-
