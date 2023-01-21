@@ -2,7 +2,7 @@
 
 Un ensemble est une collection d'éléments non ordonnés et uniques en Python. Il est similaire à une liste, mais les éléments d'un ensemble ne sont pas ordonnés et ne peuvent pas être dupliqués.
 
-Les ensembles sont créés en plaçant une séquence d'éléments séparés par des virgules entre accolades ( {}).
+Les ensembles sont créés en plaçant une séquence d'éléments séparés par des virgules entre accolades `({})`.
 
 Voici un exemple d'ensemble en Python :
 

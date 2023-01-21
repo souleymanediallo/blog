@@ -49,3 +49,54 @@ class Student(Person):
     super().__init__(name, age)
     self.student_id = student_id
 ```
+
+### Le polymorphisme 
+Le polymorphisme est un concept de la programmation orientée objet (POO) qui permet à une instance d'une classe d'être utilisée comme une instance d'une de ses sous-classes ou d'une classe parente. Il permet d'écrire des programmes plus flexibles et réutilisables, car il permet de traiter des objets de différentes classes de manière similaire.
+
+Il existe deux types de polymorphisme en POO : le polymorphisme statique et le polymorphisme dynamique.
+
+Le polymorphisme statique, également appelé surcharge, se produit lorsque plusieurs méthodes dans une classe ont le même nom mais des signitures différentes (nombre et type de paramètres). Lorsqu'une méthode est appelée, le compilateur détermine la version appropriée de la méthode à appeler en fonction des paramètres passés.
+```
+class Animal:
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof"
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow"
+
+animals = [Dog(), Cat(), Dog()]
+for animal in animals:
+    print(animal.speak())
+# will print "Woof", "Meow", "Woof"
+```
+
+Le polymorphisme dynamique, également appelé surcharge d'opérateur, se produit lorsqu'une méthode est appelée sur un objet via une référence de classe générique. Le compilateur détermine quelle version de la méthode doit être appelée en exécutant le programme, en fonction de la classe réelle de l'objet.
+```
+class Dog:
+    def __init__(self, name):
+        self._name = name
+
+    def speak(self):
+        return "Woof, my name is " + self._name
+
+class Cat:
+    def __init__(self, name):
+        self._name = name
+
+    def speak(self):
+        return "Meow, my name is " + self._name
+
+animals = [Dog("Alex"), Cat("Luna"), Dog("Max")]
+for animal in animals:
+    print(animal.speak())
+# will print "Woof, my name is Alex","Meow, my name is Luna", "Woof, my name is Max"
+```
+
+Il est important de noter que pour que le polymorphisme fonctionne, les méthodes appelées doivent avoir la même signature (c'est-à-dire le même nom et les mêmes paramètres) dans les classes enfant.
+
+Le polymorphisme est un des concepts fondamentaux de la POO, il permet une grande flexibilité, la réutilisabilité et la maintenance du code. Il permet de traiter des objets de différentes classes de manière similaire, ce qui rend les programmes plus faciles à écrire.
