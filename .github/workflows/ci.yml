@@ -18,80 +18,17 @@ permissions:
   repository-projects: write
   statuses: write
   vulnerability-alerts: write
-  actions: write
-  checks: write
   deployments: write
-  discussions: write
   pages: write
   pull-requests: write
-  security-events: write
-  secrets: write
-  administration: write
-  organization-projects: write
-  team-discussions: write
-  workflows: write
   members: write
-  organization_hooks: write
-  organization_packages: write
-  organization_plan: write
-  organization_pre_receive_hooks: write
-  organization_projects: write
-  organization_user_blocking: write
-  organization_users: write
-  team_hooks: write
-  team_packages: write
-  team_plan: write
-  team_pre_receive_hooks: write
-  team_projects: write
-  team_sync: write
-  team_discussions: write
-  team_repository_projects: write
-  team_user_blocking: write
-  team_users: write
-  enterprise: write
-  enterprise_admin: write
-  gpg_keys: write
   notifications: write
-  organization_billing: write
-  organization_deletion: write
-  organization_hooks: write
-  organization_members: write
-  organization_public_keys: write
-  organization_read: write
-  organization_webhooks: write
-  team_discussions: write
-  team_read: write
-  team_repository_projects: write
-  team_webhooks: write
-  user: write
-  user_blocking: write
-  user_email: write
-  user_follow: write
-  user_gpg_keys: write
-  user_keys: write
-  user_org_administration: write
-  user_pre_receive_hooks: write
-  user_read: write
-  user_repository_projects: write
-  user_saml: write
-  user_scim: write
-  user_ssh_keys: write
-  user_webhooks: write
   workflows: write
   checks: write
   deployments: write
-  discussions: write
-  issues: write
-  metadata: read
-  organization_hooks: write
-  organization_projects: write
-  organization_read: write
-  organization_webhooks: write
   pages: write
   pull-requests: write
-  repository_hooks: write
-  repository_projects: write
-  repository_pre
+
 
 jobs:
   build:
