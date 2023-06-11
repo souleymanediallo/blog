@@ -30,9 +30,3 @@ jobs:
 
       - name: Deploy Python3 and mkdocs🚀
         run: python3 -m mkdocs gh-deploy
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          folder: ../souleymanediallo.github.io
-          branch: gh-pages #
