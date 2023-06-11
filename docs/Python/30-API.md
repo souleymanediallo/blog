@@ -1,6 +1,6 @@
 # Les API
 
-## Définition
+## Définition 2
 
 Une API, ou Interface de Programmation Applicative (Application Programming Interface en anglais), est un ensemble de règles et de protocoles qui permettent à des logiciels de communiquer entre eux. Elle définit les méthodes et les formats de données à utiliser pour l'échange d'informations.
 
@@ -16,7 +16,7 @@ response = requests.get('https://api.example.com/data')
 data = response.json()
 ``` 
 
-### API de manipulation de fichiers JSON avec la bibliothèque standard json :
+### API de manipulation de fichiers JSON avec la bibliothèque standard json 2 :
 
 ```
 import json
