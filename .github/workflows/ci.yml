@@ -29,10 +29,4 @@ jobs:
         run: python3 -m pip install -r requirements.txt
 
       - name: Deploy Python3 and mkdocs🚀
-        run: python3 -m mkdocs gh-deploy
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: ../souleymanediallo.github.io
-          branch: gh-pages #
+        run: python3 -m mkdocs gh-deploy --force
