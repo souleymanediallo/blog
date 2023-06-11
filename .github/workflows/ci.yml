@@ -34,5 +34,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: souleymanediallo.github.io
+          folder: site
           branch: gh-pages #
