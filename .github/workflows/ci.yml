@@ -5,7 +5,7 @@ on:
   pull_request:
     branches:
       - master
-  
+
 permissions:
   contents: write
 
@@ -29,4 +29,9 @@ jobs:
         run: python3 -m pip install -r requirements.txt
 
       - name: Deploy Python3 and mkdocs🚀
-        run: python3 -m mkdocs gh-deploy --force
+        run: python3 -m mkdocs gh-deploy
+
+      - name: Deploy to GitHub Pages
+        with:
+          folder: ../souleymanediallo.github.io
+          branch: gh-pages #
