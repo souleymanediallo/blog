@@ -17,3 +17,4 @@ L'interpréteur agit comme une simple calculatrice : vous pouvez y taper une exp
 1.6
 ```
 
+## Les variables
