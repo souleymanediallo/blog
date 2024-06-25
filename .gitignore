@@ -2,3 +2,6 @@ site/
 site
 .site
 docs/blog
+venv
+venv/
+.venv

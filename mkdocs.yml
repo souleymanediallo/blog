@@ -27,11 +27,6 @@ theme:
     - navigation.indexes
     - content.code.annotate
 
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/souleymanediallo
-
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -53,5 +48,16 @@ plugins:
       nav_file: SUMMARY.md
   - mkdocs-video
   - blog:
-      blog_dir: blog/
-      post_date_format: yyyy/MM/dd
+      blog_dir: blog
+      archive_date_format: yyyy
+      authors_profiles_toc: true
+      pagination_per_page: 5
+      pagination_format: "~2~"
+      authors_profiles_toc: true
+ 
+
+  - tags:
+      tags_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      
