@@ -28,5 +28,8 @@ jobs:
       - name: Install requirements
         run: python3 -m pip install -r requirements.txt
 
+      - name: Create CNAME file
+        run: echo 'www.academy221.com' > docs/CNAME
+
       - name: Deploy Python3 and mkdocs🚀
         run: python3 -m mkdocs gh-deploy --force
