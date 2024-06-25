@@ -1,5 +1,4 @@
 # Blog Python
 
-## Coming soon
-
+## learn Python
 
