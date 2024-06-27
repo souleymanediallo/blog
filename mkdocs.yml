@@ -20,9 +20,10 @@ theme:
   language: fr
   features:
     - navigation.top
-    - navigation.sections
+    - navigation.indexes
     - search.share
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.expand
     - navigation.indexes
     - content.code.annotate
