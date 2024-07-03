@@ -44,12 +44,12 @@ Utiliser Replit.com pour apprendre le langage Python est une excellente idée. R
   
   La sortie "Hello, World!" devrait apparaître dans la console.
 
-## 2. Définition du langage
+## 2. Les premiers pas en Python
 Python est un langage de programmation populaire et puissant qui peut être utilisé pour une variété de tâches, telles que la création de scripts, la construction de sites web, le développement de logiciels et la data science. Il est facile à apprendre et à comprendre, ce qui en fait un choix idéal pour les débutants et les professionnels expérimentés.
 
-### 2.1 Les Variables de Type String
+### 2.1 Les chaines de caractères
 
-En Python, les variables peuvent stocker des chaînes de caractères (strings). Une chaîne de caractères est une séquence de caractères entourée de guillemets simples (`'`) ou doubles (`"`).
+Les variables peuvent stocker des chaînes de caractères (strings). Une chaîne de caractères est une séquence de caractères entourée de guillemets simples (`'`) ou doubles (`"`).
 
 **Déclarer une variable string :**
 
@@ -127,7 +127,7 @@ Vous pouvez effectuer plusieurs opérations sur les strings, comme la concaténa
 Ces exemples montrent comment utiliser et manipuler des chaînes de caractères en Python. Continuez à pratiquer en essayant de créer des variables string, en les modifiant, et en effectuant différentes opérations sur elles.
 
 
-### 2.2 Les Nombres Entiers et les Nombres Flottants
+### 2.2 Les nombres
 
 En Python, les variables peuvent également stocker des nombres, qu'ils soient entiers ou à virgule flottante (décimaux). 
 
@@ -181,11 +181,9 @@ Les nombres flottants sont des nombres avec des décimales. Ils permettent de re
 
 En suivant ces exemples, vous pouvez facilement manipuler des nombres entiers et des nombres flottants dans vos programmes Python.
 
-### 2.3 Les Variables de Type Booléen
+### 2.3 Les booléens
 
 Une valeur booléenne (bool) représente l'un des deux états : `True` (vrai) ou `False` (faux). Les booléens sont souvent utilisés dans les conditions et les boucles pour contrôler le flux du programme.
-
-#### Exemples
 
 **Déclarer une variable booléenne :**
 
@@ -219,7 +217,7 @@ Une variable booléenne peut être créée en lui assignant une valeur de `True`
     ```
     - La sortie sera : `False` puis `True`
 
-#### Utilisation des Booléens dans les Conditions
+*Utilisation des Booléens dans les Conditions*
 
 Les booléens sont souvent utilisés dans les structures de contrôle comme les instructions `if`, `elif`, et `else`.
 
@@ -268,9 +266,7 @@ Les booléens sont souvent utilisés dans les structures de contrôle comme les 
 
 Ces exemples montrent comment utiliser et manipuler des variables booléennes en Python, en utilisant des exemples sportifs pertinents comme Kylian Mbappé, Neymar, et la Coupe du Monde.
 
-
-
-### 2.4 Les Listes
+### 2.4 Les listes
 
 En Python, une liste est une collection ordonnée de valeurs, qui peuvent être de différents types (nombres, chaînes de caractères, booléens, etc.). Les listes sont très flexibles et permettent de stocker plusieurs éléments dans une seule variable.
 
@@ -377,7 +373,7 @@ Une liste peut être créée en plaçant des valeurs entre crochets `[]`, sépar
 
 Ces exemples montrent comment utiliser et manipuler des listes en Python.
 
-### 2.5 Les Dictionnaires
+### 2.5 Les dictionnaires
 
 Un dictionnaire est une collection non ordonnée de paires **clé-valeur**. Chaque clé dans un dictionnaire doit être unique, mais les valeurs peuvent être de n'importe quel type et peuvent être dupliquées.
 
@@ -483,7 +479,7 @@ Un dictionnaire peut être créé en plaçant des paires clé-valeur entre des a
 Ces exemples montrent comment utiliser et manipuler des dictionnaires en Python.
 
 
-### 2.7 Les Sets
+### 2.7 Les sets
 
 En Python, un set est une collection non ordonnée et non indexée d'éléments uniques. Les sets sont utiles pour stocker des éléments distincts et effectuer des opérations mathématiques comme l'union, l'intersection, et la différence.
 
@@ -596,7 +592,7 @@ Un set peut être créé en plaçant des éléments entre accolades `{}`, sépar
 Ces exemples montrent comment utiliser et manipuler des sets en Python.
 
 
-### 2.8 Les Tuples
+### 2.8 Les tuples
 
 Un tuple est une collection ordonnée et immuable (c'est-à-dire qu'une fois créé, il ne peut pas être modifié). Les tuples sont utiles pour stocker des groupes de valeurs hétérogènes et garantir que les données restent inchangées.
 
@@ -695,7 +691,7 @@ print(player_info[1:])  # Affiche (22, 'Paris Saint-Germain')
 Ces exemples montrent comment utiliser et manipuler des tuples en Python, en utilisant des exemples sportifs pertinents pour rendre les concepts plus compréhensibles.
 
 
-### 2.9 La Boucle `for`
+### 2.9 La boucle `for`
 
 La boucle `for` est utilisée pour parcourir une séquence (comme une liste, un tuple, un dictionnaire, un set ou une chaîne de caractères) et exécuter un bloc de code pour chaque élément de cette séquence.
 
@@ -731,13 +727,143 @@ for info in player_info:
 ```
 
   - La sortie sera :
-```
+```python
 Kylian Mbappé
 22
 Paris Saint-Germain
 ```
 
+### 2.10 La boucle `while`
 
+La boucle `while` permet de répéter l'exécution d'un bloc de code tant qu'une condition donnée est `True`. La boucle `while` est particulièrement utile lorsque vous ne savez pas à l'avance combien de fois le bloc de code doit être exécuté.
+
+**Syntaxe de base d'une boucle `while` :**
+```python
+while condition:
+    # bloc de code à exécuter tant que la condition est vraie
+```
+
+Exemples :
+
+1. Boucle while simple :
+```python
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+```
+      
+   - La sortie sera :
+```
+0
+1
+2
+3
+4
+```
+
+2. Utiliser une boucle while pour calculer la somme des premiers nombres entiers :
+```python
+n = 10
+sum = 0
+i = 1
+
+while i <= n:
+    sum += i
+    i += 1
+
+print(f"La somme des premiers {n} nombres entiers est {sum}")
+```
+
+   - La sortie sera : La somme des premiers 10 nombres entiers est 55
+
+3. Utiliser une boucle while avec une condition complexe :
+```python
+score = 0
+max_score = 100
+
+while score < max_score:
+    score += 10
+    print(f"Le score actuel est {score}")
+``` 
+
+- La sortie sera : 
+```
+Le score actuel est 10
+Le score actuel est 20
+Le score actuel est 30
+Le score actuel est 40
+Le score actuel est 50
+Le score actuel est 60
+Le score actuel est 70
+Le score actuel est 80
+Le score actuel est 90
+Le score actuel est 100
+```
+
+**Boucle while avec une Condition d'Arrêt**
+
+Il est important de s'assurer que la condition de la boucle while deviendra False à un moment donné pour éviter une boucle infinie.
+
+1. Boucle 'while' avec une condition d'arrêt :
+```python
+balance = 1000  # solde initial
+target_balance = 2000
+interest_rate = 0.05  # taux d'intérêt annuel
+years = 0
+
+while balance < target_balance:
+    balance += balance * interest_rate
+    years += 1
+
+print(f"Il faudra {years} ans pour atteindre un solde de {target_balance} euros.")
+```
+
+- La sortie sera : **'Il faudra 15 ans pour atteindre un solde de 2000 euros'**. 
+
+**Utilisation de break et continue dans une Boucle while**
+
+Les instructions break et continue peuvent être utilisées pour contrôler le flux d'exécution à l'intérieur d'une boucle while.
+
+1. Utiliser 'break' pour sortir de la boucle :
+```python
+i = 0
+while i < 10:
+    if i == 5:
+        break
+    print(i)
+    i += 1
+```
+
+- La sortie sera :
+```python
+0
+1
+2
+3
+4
+```
+
+2. Utiliser continue pour sauter à l'itération suivante :
+```python
+i = 0
+while i < 10:
+    i += 1
+    if i % 2 == 0:
+        continue
+    print(i)
+```
+
+- La sortie sera : 
+```python
+1
+3
+5
+7
+9
+```
+
+Ces exemples montrent comment utiliser la boucle **while** en Python, en illustrant les concepts de base et les pratiques courantes pour rendre les boucles plus efficaces et compréhensibles.
 
 ## En résumé
 **Utiliser des tutoriels et des ressources éducatives**
