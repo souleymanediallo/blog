@@ -1,4 +1,4 @@
-# Exercices Python pour Débutants
+# Niveau Débutant
 
 Ces exercices permettent de comprendre la création, la manipulation et l'utilisation des variables dans différents contextes.
 
@@ -66,4 +66,23 @@ Ces exercices permettent de comprendre la création, la manipulation et l'utilis
         print("Le nombre est zéro.")
     else:
         print("Le nombre est négatif.")
+    ```
+
+**Exercice 6**
+=== "Sujet"
+    Écrivez un programme qui demande à l'utilisateur d'entrer une lettre, puis détermine si cette lettre est une voyelle ou une consonne.
+    
+=== "Proposition de correction"
+    ```python
+    
+    # Demander à l'utilisateur d'entrer une lettre
+    lettre = input("Entrez une lettre : ").lower()
+
+    # Vérifier si la lettre est une voyelle ou une consonne
+    if lettre in 'aeiou':
+        print("La lettre est une voyelle.")
+    elif lettre.isalpha():
+        print("La lettre est une consonne.")
+    else:
+        print("Ce n'est pas une lettre valide.")
     ```
