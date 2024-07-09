@@ -86,3 +86,19 @@ Ces exercices permettent de comprendre la création, la manipulation et l'utilis
     else:
         print("Ce n'est pas une lettre valide.")
     ```
+
+**Exercice 7**
+=== "Sujet"
+    Écrivez un programme pour afficher la table de multiplication de 1 à 10 pour un nombre donné par l'utilisateur.
+    
+=== "Proposition de correction"
+    ```python
+    
+    # Demander à l'utilisateur d'entrer un nombre
+    nombre = int(input("Entrez un nombre : "))
+
+    # Afficher la table de multiplication de 1 à 10 pour ce nombre
+    print(f"Table de multiplication de {nombre} :")
+    for i in range(1, 11):
+        print(f"{nombre} x {i} = {nombre * i}")
+    ```
