@@ -102,3 +102,20 @@ Ces exercices permettent de comprendre la création, la manipulation et l'utilis
     for i in range(1, 11):
         print(f"{nombre} x {i} = {nombre * i}")
     ```
+
+**Exercice 8**
+=== "Sujet"
+    Écrivez un programme qui demande à l'utilisateur d'entrer son âge, puis détermine s'il est éligible pour voter (l'âge de vote est 18 ans ou plus).
+    
+=== "Proposition de corrigé"
+    ```python
+
+    # Demander à l'utilisateur d'entrer son âge
+    age = int(input("Entrez votre âge : "))
+
+    # Vérifier l'admissibilité à voter
+    if age >= 18:
+        print("Vous êtes éligible pour voter.")
+    else:
+        print("Vous n'êtes pas éligible pour voter.")
+    ```
