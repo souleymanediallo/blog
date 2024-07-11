@@ -119,3 +119,18 @@ Ces exercices permettent de comprendre la création, la manipulation et l'utilis
     else:
         print("Vous n'êtes pas éligible pour voter.")
     ```
+
+**Exercice 9**
+=== "Sujet"
+    Écrivez un programme pour créer liste de fruits : pomme, banane, cerise, orange, et mangue. Utiliser une boucle pour afficher chaque élément de la liste
+    
+=== "Proposition de corrigé"
+    ```python
+
+    # Liste de fruits
+    fruits = ["pomme", "banane", "cerise", "orange", "mangue"]
+
+    # Utiliser une boucle for pour afficher chaque élément de la liste
+    for fruit in fruits:
+        print(fruit)
+    ```
