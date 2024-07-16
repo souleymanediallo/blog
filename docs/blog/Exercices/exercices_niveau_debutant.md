@@ -134,3 +134,21 @@ Ces exercices permettent de comprendre la création, la manipulation et l'utilis
     for fruit in fruits:
         print(fruit)
     ```
+
+**Exercice 10**
+=== "Sujet"
+    Écrivez une fonction appelée factorielle qui prend un nombre entier non négatif en argument et retourne sa factorielle.
+    
+=== "Proposition de corrigé"
+    ```python
+
+    def factorielle(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorielle(n - 1)
+
+    # Exemple d'utilisation
+    nombre = int(input("Entrez un nombre entier non négatif : "))
+    print(f"La factorielle de {nombre} est {factorielle(nombre)}.")
+    ```
