@@ -143,10 +143,10 @@ Ces exercices permettent de comprendre la création, la manipulation et l'utilis
     ```python
 
     def factorielle(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorielle(n - 1)
+        if n == 0:
+            return 1
+        else:
+            return n * factorielle(n - 1)
 
     # Exemple d'utilisation
     nombre = int(input("Entrez un nombre entier non négatif : "))
